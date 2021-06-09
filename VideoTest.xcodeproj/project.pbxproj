@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C171E2BB26709E880023E89E /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C171E2BA26709E870023E89E /* 123.mp4 */; };
 		C1C488C2266DC52D007C4B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C488C1266DC52D007C4B80 /* AppDelegate.swift */; };
 		C1C488C4266DC52D007C4B80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C488C3266DC52D007C4B80 /* SceneDelegate.swift */; };
 		C1C488C6266DC52D007C4B80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C488C5266DC52D007C4B80 /* ViewController.swift */; };
 		C1C488C9266DC52D007C4B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C488C7266DC52D007C4B80 /* Main.storyboard */; };
 		C1C488CB266DC532007C4B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C488CA266DC532007C4B80 /* Assets.xcassets */; };
 		C1C488CE266DC532007C4B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C488CC266DC532007C4B80 /* LaunchScreen.storyboard */; };
+		C1C488D7266DD159007C4B80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C488D6266DD159007C4B80 /* AVFoundation.framework */; };
+		C1C488D9266DD15E007C4B80 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C488D8266DD15E007C4B80 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C171E2BA26709E870023E89E /* 123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 123.mp4; sourceTree = "<group>"; };
 		C1C488BE266DC52D007C4B80 /* VideoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C488C1266DC52D007C4B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C488C3266DC52D007C4B80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		C1C488CA266DC532007C4B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1C488CD266DC532007C4B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1C488CF266DC532007C4B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C488D6266DD159007C4B80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C1C488D8266DD15E007C4B80 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C488D9266DD15E007C4B80 /* AVKit.framework in Frameworks */,
+				C1C488D7266DD159007C4B80 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				C1C488C0266DC52D007C4B80 /* VideoTest */,
 				C1C488BF266DC52D007C4B80 /* Products */,
+				C1C488D5266DD159007C4B80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		C1C488C0266DC52D007C4B80 /* VideoTest */ = {
 			isa = PBXGroup;
 			children = (
+				C171E2BA26709E870023E89E /* 123.mp4 */,
 				C1C488C1266DC52D007C4B80 /* AppDelegate.swift */,
 				C1C488C3266DC52D007C4B80 /* SceneDelegate.swift */,
 				C1C488C5266DC52D007C4B80 /* ViewController.swift */,
@@ -65,6 +75,15 @@
 				C1C488CF266DC532007C4B80 /* Info.plist */,
 			);
 			path = VideoTest;
+			sourceTree = "<group>";
+		};
+		C1C488D5266DD159007C4B80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1C488D8266DD15E007C4B80 /* AVKit.framework */,
+				C1C488D6266DD159007C4B80 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C171E2BB26709E880023E89E /* 123.mp4 in Resources */,
 				C1C488CE266DC532007C4B80 /* LaunchScreen.storyboard in Resources */,
 				C1C488CB266DC532007C4B80 /* Assets.xcassets in Resources */,
 				C1C488C9266DC52D007C4B80 /* Main.storyboard in Resources */,
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
