@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75965311DD82A24ABF9C9255 /* Pods_VideoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1246E3625CF899D788F95BA7 /* Pods_VideoTest.framework */; };
 		C171E2BB26709E880023E89E /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C171E2BA26709E870023E89E /* 123.mp4 */; };
 		C1C488C2266DC52D007C4B80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C488C1266DC52D007C4B80 /* AppDelegate.swift */; };
 		C1C488C4266DC52D007C4B80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C488C3266DC52D007C4B80 /* SceneDelegate.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1246E3625CF899D788F95BA7 /* Pods_VideoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8E3D9D3D8B4D81F1939D4E /* Pods-VideoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoTest.debug.xcconfig"; path = "Target Support Files/Pods-VideoTest/Pods-VideoTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C171E2BA26709E870023E89E /* 123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 123.mp4; sourceTree = "<group>"; };
 		C1C488BE266DC52D007C4B80 /* VideoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C488C1266DC52D007C4B80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		C1C488CF266DC532007C4B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1C488D6266DD159007C4B80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C1C488D8266DD15E007C4B80 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		FB7D3E29429B43303206C74D /* Pods-VideoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoTest.release.xcconfig"; path = "Target Support Files/Pods-VideoTest/Pods-VideoTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,30 @@
 			files = (
 				C1C488D9266DD15E007C4B80 /* AVKit.framework in Frameworks */,
 				C1C488D7266DD159007C4B80 /* AVFoundation.framework in Frameworks */,
+				75965311DD82A24ABF9C9255 /* Pods_VideoTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555C5220CFB567937B8DB345 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E3D9D3D8B4D81F1939D4E /* Pods-VideoTest.debug.xcconfig */,
+				FB7D3E29429B43303206C74D /* Pods-VideoTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C1C488B5266DC52D007C4B80 = {
 			isa = PBXGroup;
 			children = (
 				C1C488C0266DC52D007C4B80 /* VideoTest */,
 				C1C488BF266DC52D007C4B80 /* Products */,
 				C1C488D5266DD159007C4B80 /* Frameworks */,
+				555C5220CFB567937B8DB345 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +98,7 @@
 			children = (
 				C1C488D8266DD15E007C4B80 /* AVKit.framework */,
 				C1C488D6266DD159007C4B80 /* AVFoundation.framework */,
+				1246E3625CF899D788F95BA7 /* Pods_VideoTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1C488D2266DC532007C4B80 /* Build configuration list for PBXNativeTarget "VideoTest" */;
 			buildPhases = (
+				607BC436C655AD6F5E97A578 /* [CP] Check Pods Manifest.lock */,
 				C1C488BA266DC52D007C4B80 /* Sources */,
 				C1C488BB266DC52D007C4B80 /* Frameworks */,
 				C1C488BC266DC52D007C4B80 /* Resources */,
+				3858BABCFE949709150B91C9 /* [CP] Embed Pods Frameworks */,
+				9FFA15B4FE5991D510D10643 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +171,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3858BABCFE949709150B91C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		607BC436C655AD6F5E97A578 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FFA15B4FE5991D510D10643 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoTest/Pods-VideoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1C488BA266DC52D007C4B80 /* Sources */ = {
@@ -303,6 +382,7 @@
 		};
 		C1C488D3266DC532007C4B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8E3D9D3D8B4D81F1939D4E /* Pods-VideoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +402,7 @@
 		};
 		C1C488D4266DC532007C4B80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7D3E29429B43303206C74D /* Pods-VideoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
